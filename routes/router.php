@@ -28,6 +28,7 @@ $router = [
   "GET" => [
     "/" => fn () => load("HomeController", "index"),
     "/contact" => fn () => load("ContactController", "index"),
+    "/create" => fn () => load("ContactController", "create"),
   ],
   "POST" => [
     "/contact" => fn () => load("ContactController", "store"),
